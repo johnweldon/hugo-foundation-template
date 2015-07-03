@@ -1,0 +1,12 @@
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<meta name='msapplication-config' content='none'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}'>
+{{ with .Keywords }}<meta name='keywords' content='Keyword Template {{ range . }}, {{ . }}{{ end }}'>{{ end }}
+{{ with .Site.Params.author }}<meta name='author' content='{{ . }}'>{{ end }}
+{{ .Hugo.Generator }}
+<base href='{{ printf "%s" .Site.BaseURL | sanitizeurl }}/'>
+<link href='{{ .Permalink }}' rel='canonical'>
+<link href='{{ .RSSlink }}' rel='alternate' type='application/rss+xml' title='{{ .Site.Title }}' />
