@@ -11,6 +11,6 @@ See:
 
 To bootstrap a new site just use the `replace.sh` script:
 
-  ./replace.sh HOSTNAME GOOGLE_TAG
+    ./replace.sh HOSTNAME GOOGLE_TAG
 
 where HOSTNAME is the domain name of the website, and GOOGLE_TAG is the id of your Google analytics property.
