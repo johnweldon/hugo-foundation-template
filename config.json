@@ -1,5 +1,5 @@
 {
-   "baseurl": "http://example.com/",
+   "baseurl": "http://##HOSTNAME##/",
    "languageCode": "en-us",
    "title": "My Example Website"
 }
