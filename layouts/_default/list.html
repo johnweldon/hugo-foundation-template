@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      {{ .Title }}
-    </title>
-  </head>
-  <body>
-  </body>
+    <head>
+        <title>{{ .Title }}</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            {{ partial "topnav.html" . }}
+            <div class="row">
+            </div>
+        </div>
+        <div class="footer tab-bar">
+            <div class="row">
+                <p class="small-4 small-offset-8 columns">Copyright &copy; 2015</p>
+            </div>
+        </div>{{ partial "body_script_includes.html" . }}
+    </body>
 </html>
