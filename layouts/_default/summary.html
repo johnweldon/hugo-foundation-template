@@ -1,0 +1,7 @@
+<div class='summary'>
+    <h4><a href='{{ .RelPermalink }}'>{{ .Title }}</a>&nbsp;<small> - {{ dateFormat "January 2, 2006" .Date }}</small></h4>
+    <div class='summary-body'>{{ .Summary }}</div>
+    <div>
+        {{ if .Truncated }}<div class='read-more-link'><a href='{{ .RelPermalink }}'>continued ...</a></div>{{ end }}
+    </div>
+</div>

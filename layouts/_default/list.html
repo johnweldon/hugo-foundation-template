@@ -4,10 +4,12 @@
         <title>{{ .Title }}</title>
     </head>
     <body>
+        {{ partial "google_tags.html" . }}
         <div class="wrapper">
             {{ partial "topnav.html" . }}
-            <div class="row">
-            </div>
+            <section role='main' class='scroll-container'>{{ range first 10 ( .Data.Pages.ByDate ) }}
+    {{ .Render "summary" }}
+    {{ end }}</section>
         </div>
         <div class="footer tab-bar">
             <div class="row">

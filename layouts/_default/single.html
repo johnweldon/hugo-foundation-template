@@ -4,10 +4,21 @@
         <title>{{ .Title }}</title>
     </head>
     <body>
+        {{ partial "google_tags.html" . }}
         <div class="wrapper">
             {{ partial "topnav.html" . }}
-            <div class="row">
-            </div>
+            <section role='main' class='scroll-container'>
+                <div class="row">
+                    <div class="small-10 small-offset-1 columns">
+                        <h1>{{ .Title }} <small> - {{ dateFormat "January 2, 2006" .Date }}</small></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-10 small-offset-1 columns">
+                        {{ .Content }}
+                    </div>
+                </div>
+            </section>
         </div>
         <div class="footer tab-bar">
             <div class="row">
