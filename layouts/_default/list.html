@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {{ partial "meta.html" . }}
         <title>{{ .Title }}</title>
+        {{ partial "head_includes.html" . }}
     </head>
     <body>
         {{ partial "google_tags.html" . }}
@@ -13,7 +15,7 @@
         </div>
         <div class="footer tab-bar">
             <div class="row">
-                <p class="small-4 small-offset-8 columns">Copyright &copy; 2015</p>
+                <p class="small-4 small-offset-8 columns">Copyright &copy; 2016</p>
             </div>
         </div>{{ partial "body_script_includes.html" . }}
     </body>
